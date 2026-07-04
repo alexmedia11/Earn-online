@@ -50,7 +50,6 @@
   }
   ::selection{ background: var(--pink); color:#fff; }
 
-  /* focus visibility */
   a:focus-visible, button:focus-visible{
     outline:2px solid var(--cyan);
     outline-offset:3px;
@@ -61,7 +60,6 @@
     *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
   }
 
-  /* ---------- NAV ---------- */
   header{
     position:fixed; top:0; left:0; right:0; z-index:100;
     backdrop-filter:blur(14px);
@@ -95,7 +93,6 @@
   }
   .nav-cta:hover{ filter:brightness(1.1); }
 
-  /* ---------- HERO ---------- */
   .hero{
     position:relative;
     padding:170px 0 110px;
@@ -216,7 +213,6 @@
     .proof-strip{ grid-template-columns:repeat(2,1fr); }
   }
 
-  /* ---------- MARQUEE ---------- */
   .marquee{
     border-top:1px solid var(--line);
     border-bottom:1px solid var(--line);
@@ -249,7 +245,6 @@
     to{ transform:translateX(-50%); }
   }
 
-  /* ---------- SECTION HEADS ---------- */
   section{ padding:110px 0; position:relative; }
   .sec-head{ max-width:640px; margin-bottom:60px; }
   .sec-eyebrow{
@@ -270,7 +265,6 @@
     line-height:1.6;
   }
 
-  /* ---------- WHY / VALUE CARDS ---------- */
   .value-grid{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -305,7 +299,6 @@
     line-height:1.6;
   }
 
-  /* ---------- TESTIMONIALS (DM SIGNATURE) ---------- */
   .testi-wrap{
     background:var(--surface);
     border-top:1px solid var(--line);
@@ -396,7 +389,6 @@
     justify-content:space-between;
   }
 
-  /* ---------- PROCESS ---------- */
   .process-list{
     display:flex;
     flex-direction:column;
@@ -431,7 +423,6 @@
     line-height:1.6;
   }
 
-  /* ---------- FINAL CTA ---------- */
   .final-cta{
     position:relative;
     text-align:center;
@@ -459,7 +450,6 @@
   }
   .final-cta .btn-primary{ margin-top:36px; font-size:17px; padding:19px 36px; }
 
-  /* ---------- FOOTER ---------- */
   footer{
     border-top:1px solid var(--line);
     padding:44px 0;
@@ -513,13 +503,13 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=1340273281418883&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
- 
+
 <body>
 
 <header>
   <nav class="wrap">
     <div class="logo"><span class="dot"></span>EARN<span style="opacity:.5">/</span>ONLINE</div>
-    <a href="https://t.me/Coachjames01" class="nav-cta" id="navCta" target="_blank" rel="noopener" onclick="if(typeof fbq !== 'undefined') { fbq('track', 'Lead'); }">DM Me</a>
+    <a href="https://t.me/Coachjames01" class="nav-cta dm-link" id="navCta" target="_blank" rel="noopener" onclick="if(typeof fbq !== 'undefined') { fbq('track', 'Lead'); }">DM Me</a>
   </nav>
 </header>
 
@@ -532,11 +522,7 @@ src="https://www.facebook.com/tr?id=1340273281418883&ev=PageView&noscript=1"
     <h1>Build an income stream that runs <span class="grad">while you sleep.</span></h1>
     <p class="lead">I coach everyday people to build real income online — through affiliate marketing, brand promotions, digital products and more — the exact systems I use, taught step by step, with daily support straight in your DMs. No fluff, no theory. Just a plan you can start today.</p>
     <div class="hero-ctas">
-      <a href="https://t.me/Coachjames01" class="btn-primary dm-link" target="_blank" rel="noopener noreferrer" onclick="if(typeof fbq !== 'undefined') { fbq('track', 'Lead'); }">
-        Slide into my DMs
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7Z"/></svg>
-      </a>
-      <span class="hero-note">Just type <strong>"START"</strong> — I reply personally.</span>
+      <span class="hero-note">Tap <strong>"DM Me"</strong> above — just type <strong>"START"</strong> and I reply personally.</span>
     </div>
 
     <div class="proof-strip">
@@ -701,11 +687,7 @@ src="https://www.facebook.com/tr?id=1340273281418883&ev=PageView&noscript=1"
   <div class="wrap">
     <h2>Your next student success story starts with one message.</h2>
     <p>Send me "START" right now. I read and reply to every single DM myself.</p>
-    <a href="https://t.me/Coachjames01" class="btn-primary dm-link" target="_blank" rel="noopener" onclick="if(typeof fbq !== 'undefined') { fbq('track', 'Lead'); }">
-      DM Me "START"
-</a>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4 20-7Z"/></svg>
-    </a>
+    <p style="margin-top:14px; font-size:15px; color:var(--text-dim);">Tap <strong style="color:var(--text)">"DM Me"</strong> at the top of the page to get started.</p>
   </div>
 </section>
 
@@ -725,7 +707,7 @@ src="https://www.facebook.com/tr?id=1340273281418883&ev=PageView&noscript=1"
 
 <script>
   // ====== EDIT THIS: set your DM link once, every "DM me" button updates ======
-  const DM_LINK = "https://t.me/Coachjames01"; // replace with your Instagram, WhatsApp (https://wa.me/1234567890) or Telegram link
+  const DM_LINK = "https://t.me/Coachjames01"; // your single point of contact
   document.querySelectorAll('.dm-link, #navCta').forEach(el => {
     el.setAttribute('href', DM_LINK);
     el.setAttribute('target', '_blank');
